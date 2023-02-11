@@ -1,0 +1,41 @@
+    <!-- <div class="row">
+        <div class="col-6 w-50 m-auto">
+            <form [formGroup] = "RegForm" class="form">
+                <div class="form-group d-flex m-3">          
+                    <label class="col-3">Name</label>
+                    <input  formControlName="name" type="text" class="form-control text-center">
+                    <div style="color: red; text-align: center;" *ngIf="!userName; else invalidName"></div>
+                    <ng-template class="d-block p-2" #invalidName>
+                        <div style="color: red; text-align: center;" *ngIf="userName != 'VALID'">
+                            Name Is Required
+                        </div>
+                    </ng-template>
+                    
+                </div>
+                <div class="form-group d-flex m-3">          
+                    <label class="col-3">Email</label>
+                    <input  formControlName="email" type="text" class="form-control text-center">
+                    <div style="color: red; text-align: center;" *ngIf="!userEmail; else invalidEmail"></div>
+                    <ng-template class="d-block p-2" #invalidEmail>
+                        <div style="color: red; text-align: center;" *ngIf="userEmail != 'VALID'">
+                            email must be between 10 and 40 characters
+                        </div>
+                    </ng-template>
+                </div>
+                <div class="col-8 form-group d-flex justify-content-end">          
+                    <input value="Add" type="button" class="w-25 btn btn-outline-dark" (click)="validateData()">
+                </div>
+            </form>
+        </div> -->
+        <div class="w-100 mb-3 mt-5 d-flex justify-content-center">
+            <ul class="alert alert-dark w-50 d-flex justify-content-center text-center">
+                <li><a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="">Home</a></li>
+                <li><a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/users">Show Users</a></li>
+                <li><a routerLinkActive="active" routerLink="/users/:id">User Details</a></li>
+                <li><a routerLinkActive="active" routerLink="/profile">Profile</a></li>
+            </ul>
+        </div>
+
+
+    
+

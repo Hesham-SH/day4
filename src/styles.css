@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';  
+
+li{
+    width: 50%;
+    background-color:black;
+    margin-top:10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+.active{
+    width: 150%;
+    border-radius: 5px;
+    color:red;
+    text-decoration: none;
+}
